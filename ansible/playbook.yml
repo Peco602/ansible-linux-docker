@@ -1,0 +1,10 @@
+---
+- name: Test playbook
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Test commands execution
+      shell: hostname
+      register: output
+    - name: Test commands output 
+      debug: var=output.stdout

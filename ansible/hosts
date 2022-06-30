@@ -1,0 +1,2 @@
+192.168.100.2 ansible_connection=ssh ansible_user=user ansible_password=Pa$$w0rd123!
+192.168.100.3 ansible_connection=ssh ansible_user=user ansible_password=Pa$$w0rd123!
