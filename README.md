@@ -28,4 +28,4 @@ docker run --rm -v $PWD/ansible:/etc/ansible -ti ansible-linux-docker:latest bas
 
 ## DockerHub
 
-- [peco602/ansible-linux-docker](https://hub.docker.com/repository/docker/peco602/ansible-linux-docker)
+- [peco602/ansible-linux-docker](https://hub.docker.com/r/peco602/ansible-linux-docker)
