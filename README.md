@@ -3,30 +3,40 @@
 
 # Ansible Linux Docker image
 
-Run Ansible in a Linux container.
+This Docker image allows to run Ansible from a Linux container. It supports Linux, Windows and MacOS target hosts.
+
 
 ## Build the image
 
-```ps1
+```bash
 docker build -t ansible-linux-docker:latest .
 ```
 
 ## Run the container
 
 Mount the `ansible` folder containing:
+
 - `ansible.cfg`: Ansible default configuration
 - `hosts`: Hosts inventory
 - `playbook.yml`: Ansible playbook
+
 and execute the `ansible-playbook` command:
-```ps1
+
+```bash
 docker run --rm -v $PWD/ansible:/etc/ansible ansible-linux-docker:latest ansible-playbook /etc/ansible/playbook.yml -i /etc/ansible/hosts
 ```
 
 Mount the `ansible` folder and run the container interactively:
-```ps1
+
+```bash
 docker run --rm -v $PWD/ansible:/etc/ansible -ti ansible-linux-docker:latest bash
 ```
 
 ## DockerHub
 
 - [peco602/ansible-linux-docker](https://hub.docker.com/r/peco602/ansible-linux-docker)
+
+
+## Authors
+
+- [Giovanni Pecoraro](https://www.peco602.com/)
