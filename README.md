@@ -1,5 +1,6 @@
 ![Test](https://github.com/Peco602/ansible-linux-docker/actions/workflows/test.yml/badge.svg)
 ![Push](https://github.com/Peco602/ansible-linux-docker/actions/workflows/push.yml/badge.svg)
+[![Mentioned in awesome-docker](https://awesome.re/mentioned-badge.svg)](https://github.com/veggiemonk/awesome-docker)
 
 # Ansible Linux Docker image
 
